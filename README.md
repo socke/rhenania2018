@@ -72,3 +72,44 @@ Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework 
 ## Copyright and License
 
 Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/gh-pages/LICENSE) license.
+
+
+## Links to image sources
+<a href="https://www.freepik.com/free-photos-vectors/football">Football vector created by freepik - www.freepik.com</a> 
+
+
+## Change text for content item from tt_content
+
+Add this into Page-TS config of the root page
+
+```
+TCEFORM {
+    tt_content {
+        layout {
+            altLabels {
+                0 = Karten Design
+                1 = Alternatives Design
+            }
+            removeItems = 2, 3, 4, 5
+        }
+    }
+}
+```
+
+## Fluid Styled content überschreiben
+
+https://www.programmier-tipps.de/2017/12/14/fluid-styled-content-templates-ueberschreiben/ 
+
+```
+lib.contentElement {
+   templateRootPaths {
+      100 = fileadmin/template/Resources/Private/Templates/
+   }
+   partialRootPaths {
+      100 = fileadmin/template/Resources/Private/Partials/
+   }
+   layoutRootPaths {
+      100 = fileadmin/template/Resources/Private/Layouts/
+   }
+}
+```

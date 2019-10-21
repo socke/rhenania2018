@@ -1,16 +1,11 @@
 body {
-  font-size: 20px;
+  font-size: 16px;
   color: #212529;
   font-family: 'Lora', 'Times New Roman', serif;
 }
 
 p {
   line-height: 1.5;
-  margin: 30px 0;
-}
-
-p a {
-  text-decoration: underline;
 }
 
 h1,
@@ -23,15 +18,32 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+h2, h2 {
+  font-size: 1.75rem;
+}
+
+h3, h3 {
+  font-size: 1.5rem;
+}
+
+h4, h4 {
+  font-size: 1.5rem;
+}
+
+h5, h5 {
+  font-size: 1.25rem;
+}
+
 a {
   color: #212529;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
+  text-decoration: underline;
 }
 
 a:focus, a:hover {
-  color: #0085A1;
+  color: #0046a1;
 }
 
 blockquote {
@@ -58,13 +70,13 @@ blockquote {
 
 ::-moz-selection {
   color: #fff;
-  background: #0085A1;
+  background: #0046a1;
   text-shadow: none;
 }
 
 ::selection {
   color: #fff;
-  background: #0085A1;
+  background: #0046a1;
   text-shadow: none;
 }
 
@@ -90,6 +102,10 @@ img::-moz-selection {
   color: #343a40;
 }
 
+#mainNav .navbar-brand > img {
+  width: 60px;
+}
+
 #mainNav .navbar-toggler {
   font-size: 12px;
   font-weight: 800;
@@ -99,10 +115,21 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-nav > li.nav-item > a {
+  text-decoration: none;
   font-size: 12px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
+  border: 1px solid #e5e5e5;
+  border-radius: 5px;
+  padding: 7px;
+  margin: 1px;
+}
+
+@media only screen and (max-width: 992px) {
+  #mainNav .navbar-nav > li.nav-item > a i {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -118,8 +145,10 @@ img::-moz-selection {
     color: rgba(255, 255, 255, 0.8);
   }
   #mainNav .navbar-nav > li.nav-item > a {
+    text-decoration: none;
     padding: 10px 20px;
     color: #fff;
+    border: none;
   }
   #mainNav .navbar-nav > li.nav-item > a:focus, #mainNav .navbar-nav > li.nav-item > a:hover {
     color: rgba(255, 255, 255, 0.8);
@@ -153,13 +182,13 @@ img::-moz-selection {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-brand:focus, #mainNav.is-fixed .navbar-brand:hover {
-    color: #0085A1;
+    color: #0046a1;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a {
     color: #212529;
   }
   #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-    color: #0085A1;
+    color: #0046a1;
   }
   #mainNav.is-visible {
     /* if the user changes the scrolling direction, we show the header */
@@ -172,7 +201,7 @@ img::-moz-selection {
 }
 
 header.masthead {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   background: no-repeat center center;
   background-color: #868e96;
   background-attachment: scroll;
@@ -181,6 +210,7 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /* put background image into container */
 }
 
 header.masthead .overlay {
@@ -190,13 +220,26 @@ header.masthead .overlay {
   height: 100%;
   width: 100%;
   background-color: #212529;
-  opacity: 0.5;
+  opacity: 0.3;
+}
+
+header.masthead .container {
+  background-image: none;
+}
+
+@media only screen and (min-width: 768px) {
+  header.masthead .container {
+    background-image: url(/fileadmin/templates/rhenania2018/img/rhenania-hinsbeck-vektor.svg);
+    background-repeat: no-repeat;
+    background-size: 131px;
+    background-position: right;
+  }
 }
 
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  padding: 200px 0 150px;
+  padding: 150px 0 120px;
   color: white;
 }
 
@@ -204,7 +247,7 @@ header.masthead .site-heading {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0;
+    padding: 150px 0;
   }
 }
 
@@ -215,7 +258,7 @@ header.masthead .site-heading {
 
 header.masthead .page-heading h1,
 header.masthead .site-heading h1 {
-  font-size: 50px;
+  font-size: 45px;
   margin-top: 0;
 }
 
@@ -232,7 +275,7 @@ header.masthead .site-heading .subheading {
 @media only screen and (min-width: 768px) {
   header.masthead .page-heading h1,
   header.masthead .site-heading h1 {
-    font-size: 80px;
+    font-size: 70px;
   }
 }
 
@@ -279,7 +322,7 @@ header.masthead .post-heading .meta a {
 
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
-  color: #0085A1;
+  color: #0046a1;
 }
 
 .post-preview > a > .post-title {
@@ -307,7 +350,7 @@ header.masthead .post-heading .meta a {
 
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
   text-decoration: underline;
-  color: #0085A1;
+  color: #0046a1;
 }
 
 @media only screen and (min-width: 768px) {
@@ -371,7 +414,7 @@ header.masthead .post-heading .meta a {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #0085A1;
+  color: #0046a1;
 }
 
 form .form-group:first-child .floating-label-form-group {
@@ -380,6 +423,13 @@ form .form-group:first-child .floating-label-form-group {
 
 footer {
   padding: 50px 0 65px;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#33000000',GradientType=0 );
 }
 
 footer .list-inline {
@@ -396,25 +446,104 @@ footer .copyright {
 .btn {
   font-size: 14px;
   font-weight: 800;
-  padding: 15px 25px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  border-radius: 0;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .btn-primary {
-  background-color: #0085A1;
-  border-color: #0085A1;
+  background-color: #0046a1;
+  border-color: #0046a1;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
-  background-color: #00657b !important;
-  border-color: #00657b !important;
+  background-color: #00357b !important;
+  border-color: #00357b !important;
 }
 
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+.dropdown-header {
+  padding: .2rem 1.0rem;
+  font-size: .875rem;
+  color: #6c757d;
+  border-top: 1px solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.08) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#11000000',GradientType=0 );
+}
+
+a.dropdown-item:hover {
+  background-color: #007bff;
+}
+
+a.nav-link:hover {
+  color: #007bff;
+}
+
+.breadcrumb {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: .25rem;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+  font-size: .875rem;
+  padding: 0rem 1rem;
+}
+
+li.breadcrumb-item.active::before {
+  content: none;
+}
+
+.table-striped {
+  font-size: 1rem;
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+}
+
+.table-triped td {
+  padding: 1px;
+}
+
+a.btn.btn-outline-dark.btn-sm.nav-item.nav-link.active.mr-1.mb-1 > i {
+  color: #fff !important;
+}
+
+a.btn.btn-outline-dark.btn-sm.nav-item.nav-link.active.mr-1.mb-1:hover > i {
+  color: #fff !important;
+}
+
+a.btn.btn-outline-dark.btn-sm.nav-item.nav-link.mr-1.mb-1:hover > i {
+  color: #dee2e6 !important;
+}
+
+a.dropdown-item {
+  text-decoration: none;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+}
+
+.jumbotron-fluid {
+  padding: 20px 0 10px;
+}
+
+.jumbotron {
+  margin-bottom: 0rem;
+}
+
+.jumbotron .card {
+  background-color: transparent;
+  border: none;
+}
+
+.jumbotron .img-thumbnail {
+  background-color: transparent;
 }

@@ -7,7 +7,11 @@
   .navbar-brand {
     font-weight: 800;
     color: $gray-800;
+    > img {
+      width: 60px;
+    }
   }
+  
   .navbar-toggler {
     font-size: 12px;
     font-weight: 800;
@@ -18,10 +22,18 @@
   .navbar-nav {
     > li.nav-item {
       > a {
+        text-decoration: none;
         font-size: 12px;
         font-weight: 800;
         letter-spacing: 1px;
         text-transform: uppercase;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        padding: 7px;
+        margin: 1px;
+        @media only screen and (max-width: 992px) {
+          i { display:none }
+        }
       }
     }
   }
@@ -39,8 +51,10 @@
     .navbar-nav {
       > li.nav-item {
         > a {
+          text-decoration: none;
           padding: 10px 20px;
           color: $white;
+          border: none;
           &:focus,
           &:hover {
             color: fade-out($white, .2);

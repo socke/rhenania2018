@@ -1,7 +1,7 @@
 // Styling for the masthead
 header.masthead {
   // TIP: Background images are set within the HTML using inline CSS!
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   background: no-repeat center center;
   background-color: $gray-600;
   background-attachment: scroll;
@@ -14,22 +14,33 @@ header.masthead {
     height: 100%;
     width: 100%;
     background-color: $gray-900;
-    opacity: 0.5;
+    opacity: 0.3;
+  }
+  /* put background image into container */
+  .container {
+    background-image: none;
+     @media only screen and (min-width: 768px) {
+      
+      background-image: url(/fileadmin/templates/rhenania2018/img/rhenania-hinsbeck-vektor.svg);
+      background-repeat: no-repeat;
+      background-size: 131px;
+      background-position: right;
+    }
   }
   .page-heading,
   .post-heading,
   .site-heading {
-    padding: 200px 0 150px;
+    padding: 150px 0 120px;
     color: white;
     @media only screen and (min-width: 768px) {
-      padding: 200px 0;
+      padding: 150px 0;
     }
   }
   .page-heading,
   .site-heading {
     text-align: center;
     h1 {
-      font-size: 50px;
+      font-size: 45px;
       margin-top: 0;
     }
     .subheading {
@@ -42,7 +53,7 @@ header.masthead {
     }
     @media only screen and (min-width: 768px) {
       h1 {
-        font-size: 80px;
+        font-size: 70px;
       }
     }
   }
