@@ -21,13 +21,3 @@ jobs:
     - run: gulp
       env:
         CI: true
-    - name: copy file via ssh key
-      uses: appleboy/scp-action@master
-      env:
-        HOST: ${{ secrets.HOST }}
-        USERNAME: ${{ secrets.USERNAME }}
-        PORT: ${{ secrets.PORT }}
-        KEY: ${{ secrets.KEY }}
-      with:
-        source: "css/clean-blog-min.css"
-        target: "css"
