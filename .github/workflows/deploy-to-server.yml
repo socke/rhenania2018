@@ -29,5 +29,5 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.KEY }}
       with:
-        source: "css/clean-blog.min.css"
-        target: "/home/rhenania/rhenania2018container/fileadmin/templates/rhenania2018/css"
+        source: "css/*.css"
+        target: "/home/rhenania/rhenania2018container/fileadmin/templates/rhenania2018"
