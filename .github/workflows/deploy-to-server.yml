@@ -29,5 +29,5 @@ jobs:
         PORT: ${{ secrets.PORT }}
         KEY: ${{ secrets.KEY }}
       with:
-        source: "ts/*.ts, css/*.css, Layouts/*.html, Partials/*.html, js/*.js"
+        source: "ts/*.ts, css/*.css, Layouts/*.html, Templates/*.html, Partials/*.html, js/*.js, *.html"
         target: ${{ secrets.TARGET }}

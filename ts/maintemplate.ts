@@ -245,21 +245,21 @@ page.10.file.stdWrap.cObject {
     key.override.field = backend_layout
     
     default = TEXT
-    default.value = fileadmin/templates/rhenania2018/maintemplate.html
+    default.value = fileadmin/templates/rhenania2018/Templates/maintemplate.html
     2 = TEXT
-    2.value = fileadmin/templates/rhenania2018/maintemplate.html
+    2.value = fileadmin/templates/rhenania2018/Templates/maintemplate.html
     3 = TEXT
-    3.value = fileadmin/templates/rhenania2018/maintemplate_2_cols.html
+    3.value = fileadmin/templates/rhenania2018/Templates/maintemplate_2_cols.html
     4 = TEXT
-    4.value = fileadmin/templates/rhenania2018/maintemplate_3_cols.html
+    4.value = fileadmin/templates/rhenania2018/Templates/maintemplate_3_cols.html
     5 = TEXT
-    5.value = fileadmin/templates/rhenania2018/maintemplate_3_cols_same_size.html
+    5.value = fileadmin/templates/rhenania2018/Templates/maintemplate_3_cols_same_size.html
     6 = TEXT
-    6.value = fileadmin/templates/rhenania2018/maintemplate_3_cols_same_size_banner.html
+    6.value = fileadmin/templates/rhenania2018/Templates/maintemplate_3_cols_same_size_banner.html
     7 = TEXT
-    7.value = fileadmin/templates/rhenania2018/maintemplate_3_cols_same_size_banner_jumbo_footer.html
+    7.value = fileadmin/templates/rhenania2018/Templates/maintemplate_3_cols_same_size_banner_jumbo_footer.html
     8 = TEXT
-    8.value = fileadmin/templates/rhenania2018/maintemplate_2_cols_banner_jumbo_footer.html
+    8.value = fileadmin/templates/rhenania2018/Templates/maintemplate_2_cols_banner_jumbo_footer.html
 
 }
 
