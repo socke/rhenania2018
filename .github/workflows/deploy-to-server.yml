@@ -30,4 +30,4 @@ jobs:
         KEY: ${{ secrets.KEY }}
       with:
         source: "css/*.css"
-        target: "/home/rhenania/rhenania2018container/fileadmin/templates/rhenania2018"
+        target: ${{ secrets.TARGET }}
