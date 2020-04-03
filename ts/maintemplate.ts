@@ -27,7 +27,7 @@ lib.headerimage {
         data = levelmedia: -1, slide
         fieldName = media
     }
-    #listNum = rand
+    listNum = rand
     begin = 0
     maxItems = 1
     renderObj = TEXT
