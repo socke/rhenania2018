@@ -328,7 +328,10 @@ page.headerData >
 page.headerData = COA
 page.headerData.10 = TEXT
 page.headerData.10.field = title
+page.headerData.10.field = title
 page.headerData.10.wrap = <title>SC Rhenania Hinsbeck 1919 e.V. - |</title>
 page.headerData.20 = TEXT
 page.headerData.20.value = <link rel="apple-touch-icon" href="fileadmin/templates/rhenania2018/img/apple-touch-icon.png"/>
 
+# config settings
+config.cache_clearAtMidnight = 1
