@@ -1,62 +1,39 @@
-# [Start Bootstrap - Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/)
+# Rhenania Hinsbeck Typo3 Design Template
 
-[Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/) is a stylish, responsive blog theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working PHP contact form.
+This design for the [Rhenania Hinsbeck Webpages](https://www.rhenaniahinsbeck.de) was originally based on a bootstrap template from 
+[Start Bootstrap - Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/). 
+
+We started with a fork a while ago, but as this is now so far away from the version of clean blog, the decision was made to create a complete own repository without any forking connection. 
+This template is used for a typo3 installation for the [Rhenania Hinsbeck Webpages](https://www.rhenaniahinsbeck.de) and can be used to make design updates regarding the templates (look and feel). 
 
 ## Usage
 
-### Basic Usage
+This repository is build as follows:
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+**css** hold all the css files - note that these must be first created. See **build chapter** for how to build.
+**img** all the images for the html template
+**js** holding all javascript files
+**Layouts** all typo3 layout files are in here
+**Partials* all typo3 partial layout files are in here
+**scss** these are the source SASS files, so use these if you want to change the css and then build the css files. See **build chapter** for how to build.
+**Templates** all the typo3 template files are in here. Have a look also for the files which begin with **maintemplate<xx>.html** as these are the main page templates used for typo3 fluid design.
+**ts** holds the typoscript files for constants and for template typoscript code. 
+**vendor** all vendor code, e.g. bootstrap, jquery asf is in here. Do not change!
 
-### Advanced Usage
+### Change the design
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+- Clone the repository.
+- create a branch.
+- Change the files you need to change e.g. scss files, or templates, or images, or Layouts or Partials... e.g.
+- Then run `npm install` 
+- and then run `gulp` which will build the the css and minifies it from scss and all other things which are needed. 
+- commit and push the branch
+- create a pull request
+- if the pull request is accepted and merged, the changes will automatically copied to the live-server!!!
 
-#### Gulp Tasks
+## Knowledge Base
 
-- `gulp` the default task that builds everything
-- `gulp dev` browserSync opens the project in your default browser and live reloads when changes are made
-- `gulp css` compiles SCSS files into CSS and minifies the compiled CSS
-- `gulp js` minifies the themes JS file
-- `gulp vendor` copies dependencies from node_modules to the vendor directory
-
-You must have npm and Gulp installed globally on your machine in order to use these features.
-
-## Troubleshooting and Help
-
-Start Bootstrap has a public Slack channel which is a great place to ask questions about this template and all things related to Start Bootstrap.
-
-**[Click here to join the Slack channel!](https://startbootstrap-slack.herokuapp.com/)**
-
-## Bugs and Issues
-
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-clean-blog/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/clean-blog/).
-
-## About
-
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
-
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
-
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
-
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
-
-## Copyright and License
-
-Copyright 2013-2018 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-clean-blog/blob/gh-pages/LICENSE) license.
-
-
-## Links to image sources
-<a href="https://www.freepik.com/free-photos-vectors/football">Football vector created by freepik - www.freepik.com</a> 
-
-
-## Change text for content item from tt_content
+### Change text for content item from tt_content
 
 Add this into Page-TS config of the root page
 
@@ -74,7 +51,7 @@ TCEFORM {
 }
 ```
 
-## Fluid Styled content überschreiben
+### Fluid Styled content überschreiben
 
 https://www.programmier-tipps.de/2017/12/14/fluid-styled-content-templates-ueberschreiben/ 
 
